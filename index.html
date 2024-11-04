@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<header class="fixed bg-white w-full py-4">
+<header class="fixed bg-white w-full py-4 z-20">
     <div class="mx-auto w-full container flex space-between">
         <div class="w-full flex justify-between">
 
@@ -48,7 +48,13 @@
             <div class="flex gap-6 items-center">
                 <div class="flex flex-col basis-1/2 gap-6 justify-center">
                     <h1 class="text-3xl font-bold leading-tight font-['Roboto']">
-                        "Bergabunglah dengan 250.000+ Anggota Luarsekolah
+                        "Bergabunglah dengan
+                        <span
+                                class="relative after:content-[''] after:absolute after:left-0 after:w-full after:h-[2px] after:bg-[#FFCC00] after:bottom-1 after:scale-x-90">
+                            250.000+
+                        </span>
+                        Anggota
+                        Luarsekolah
                         dan Dapatkan Keterampilan untuk Karir Masa Depanmu!"
                     </h1>
                     <p class="font-['Roboto'] text-base">
@@ -61,18 +67,25 @@
                 </div>
                 <div
                         class='basis-1/2 h-[368px] overflow-hidden rounded-2xl flex items-center'>
-                    <img alt="kegiatan luar sekolah"
-                         src='/images/LS_TRKP_002.jpg'/>
+                    <video controls>
+                        <source src="/web%20dev%20assets/Hero/SelayangPandangLuarsekolah.mp4">
+                    </video>
+                    <!--                    <img alt="kegiatan luar sekolah"-->
+                    <!--                         src='/images/LS_TRKP_002.jpg'/>-->
                 </div>
             </div>
         </div>
     </section>
 
-    <section class='bg-[#00cc99] w-full py-20'>
-        <div class="xl:container mx-auto border-black">
-            <div class="flex gap-6 py-8">
-                <div class="flex basis-1/2 gap-6">
-                    <div class='w-[264px] h-[160px] flex flex-col rounded-2xl'>
+    <section
+            class='bg-[#00cc99] w-full h-[640px] flex flex-col justify-center relative overflow-hidden'>
+        <img
+                src="public/web%20dev%20assets/Kenal%20Kami%20Lebih%20Dekat/Background.png"
+                class="w-full absolute" alt="">
+        <div class="xl:container mx-auto border-black z-10">
+            <div class="flex gap-6 items-center">
+                <div class="flex basis-1/2 gap-6 justify-end">
+                    <div class='w-full flex flex-col rounded-2xl'>
                         <img
                                 src="/web%20dev%20assets/Kenal%20Kami%20Lebih%20Dekat/Kenal%20Kami%20Lebih%20Dekat%20-%20M.%20Jibril%20Sorban.png"
                                 alt="">
@@ -99,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='w-[264px] h-[160px] flex flex-col rounded-2xl'>
+                    <div class='w-full flex flex-col rounded-2xl'>
                         <img
                                 src="/web%20dev%20assets/Kenal%20Kami%20Lebih%20Dekat/Kenal%20Kami%20Lebih%20Dekat%20-%20M.%20Jibril%20Sorban.png"
                                 alt="">
@@ -158,15 +171,36 @@
 
     <section id="vision" class="w-full">
         <div
-                class="xl:container flex flex-col mx-auto ">
-            <div class="flex w-full gap-6 min-h-[100px]">
-                <div class="basis-4/12 ">
+                class="xl:container flex flex-col gap-12 mx-auto  relative">
+            <div class="absolute w-full h-full">
+                <img src="/web%20dev%20assets/Visi%20Misi/Layer_1-2-4.png"
+                     class="right-0 absolute translate-x-1/2"
+                     alt="">
+                <img src="/web%20dev%20assets/Visi%20Misi/Layer_1-2-4.png"
+                     class="bottom-0 absolute -translate-x-1/2"
+                     alt="">
+                <img src="/web%20dev%20assets/Visi%20Misi/Layer_1-2-2.png"
+                     class="left-1/2 translate-x-1/2 absolute"
+                     alt="">
+                <img src="/web%20dev%20assets/Visi%20Misi/Layer_1-2-3.png"
+                     class="top-1/2 left-3/4 -translate-y-20 translate-x-1/2 absolute"
+                     alt="">
+                <img src="/web%20dev%20assets/Visi%20Misi/Layer_1-2-3.png"
+                     class="top-1/2 translate-y-full left-8 translate-x-1/2 absolute"
+                     alt="">
+                <img src="/web%20dev%20assets/Visi%20Misi/Layer_1-2.png"
+                     class="bottom-0 translate-y-full left-48 translate-x-1/2 absolute"
+                     alt="">
+            </div>
+            <div class="flex w-full gap-6">
+                <div
+                        class="w-[360px] grid place-content-end rounded-2xl overflow-hidden">
                     <img
-
                             src="/web%20dev%20assets/Visi%20Misi/Visi.svg"
+                            class="w-full"
                             alt="visi luar sekolah">
                 </div>
-                <div class="basis-8/12 border border-blue">
+                <div class="basis-5/12 flex flex-col justify-center gap-4">
                     <h2 class="text-black text-[32px] font-normal leading-10">
                         Visi</h2>
                     <p class="text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
@@ -177,13 +211,13 @@
                 </div>
 
             </div>
-            <div class="flex w-full gap-6 min-h-[100px]">
-
-                <div class="basis-8/12 border border-blue">
+            <div class="flex w-full justify-end gap-6 min-h-[100px]">
+                <div class="basis-5/12 flex flex-col justify-center gap-6">
                     <h2
                             class="text-black text-[32px] font-normal leading-10">
                         Misi</h2>
-                    <ul>
+                    <ul
+                            class="list-disc ms-5 text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
                         <li>Merancang program pendidikan yang terkurasi dan
                             sesuai dengan kebutuhan industri, termasuk pelatihan
                             digital marketing.
@@ -202,7 +236,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="basis-4/12 ">
+                <div class="w-[360px] rounded-2xl overflow-hidden">
                     <img
 
                             src="/web%20dev%20assets/Visi%20Misi/Misi.svg"
@@ -216,7 +250,7 @@
     <section id="whyUs" class="w-full">
 
         <div
-                class="border xl:container flex flex-col mx-auto gap-8">
+                class="xl:container flex flex-col mx-auto gap-8">
             <h2
                     class="text-center text-black text-[32px] font-normal font-['Poppins'] leading-10">
                 Mengapa Luar sekolah</h2>
@@ -225,8 +259,9 @@
                 <div
                         class="flex flex-col basis-3/12 bg-[#00CC99] gap-4 p-6 justify-center items-center rounded-2xl">
                     <div class="flex flex-col items-center gap-3">
-                        <img src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/Jembatani%20Kesenjangan%20Edukasi.svg"
-                             alt="Jembatan Kesenjangan Edukasi">
+                        <img
+                                src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/ilustrasi1.png"
+                                alt="Jembatan Kesenjangan Edukasi">
                         <h3 class="text-center text-white text-2xl font-semibold font-['Poppins'] leading-loose">
                             Jembatan Kesenjangan Edukasi</h3>
                     </div>
@@ -242,8 +277,9 @@
                 <div
                         class="flex flex-col basis-3/12 bg-[#00CC99] gap-4 p-6 justify-center items-center rounded-2xl">
                     <div class="flex flex-col items-center gap-3">
-                        <img src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/Tak%20Perlu%20Khawatir%20Salah%20Jurusan.svg"
-                             alt="Jembatan Kesenjangan Edukasi">
+                        <img
+                                src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/ilustrasi2.png"
+                                alt="Jembatan Kesenjangan Edukasi">
                         <h3 class="text-center text-white text-2xl font-semibold font-['Poppins'] leading-loose">
                             Tak Perlu Khawatir Salah Jurusan</h3>
                     </div>
@@ -261,8 +297,9 @@
                 <div
                         class="flex flex-col basis-3/12 bg-[#00CC99] gap-4 p-6 justify-center items-center rounded-2xl">
                     <div class="flex flex-col items-center gap-3">
-                        <img src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/Kelas%20Terjangkau%20Untuk%20Semua.svg"
-                             alt="Jembatan Kesenjangan Edukasi">
+                        <img
+                                src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/illustrasi3.png"
+                                alt="Jembatan Kesenjangan Edukasi">
                         <h3 class="text-center text-white text-2xl font-semibold font-['Poppins'] leading-loose">
                             Kelas Terjangkau untuk Semua</h3>
                     </div>
@@ -279,8 +316,9 @@
                 <div
                         class="flex flex-col basis-3/12 bg-[#00CC99] gap-4 p-6 justify-center items-center rounded-2xl">
                     <div class="flex flex-col items-center gap-3">
-                        <img src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/Akses%20Edukasi%20Mudah%20dan%20Berkualitas.png"
-                             alt="Jembatan Kesenjangan Edukasi">
+                        <img
+                                src="/web%20dev%20assets/Mengapa%20Luar%20Sekolah/Illustrasi4.png"
+                                alt="Jembatan Kesenjangan Edukasi">
                         <h3 class="text-center text-white text-2xl font-semibold font-['Poppins'] leading-loose">
                             Akses Edukasi Mudah dan Berkualitas</h3>
                     </div>
@@ -301,7 +339,10 @@
     </section>
 
     <section id="ourValue"
-             class="w-full h-[500px] bg-[rgba(0,204,153,0.72)] grid place-content-center">
+             class="w-full h-[480px] bg-[rgba(0,204,153,0.72)] flex flex-col justify-center overflow-hidden relative">
+        <img
+                src="public/web%20dev%20assets/Value%20Utama%20Kami/Background%20Picture%20Green.png"
+                class="w-full absolute" alt="">
         <div
                 class="xl:container flex flex-col mx-auto relative ">
             <div class="h-[60px] px-8 py-2 rounded-[32px] flex-col justify-center items-center gap-2.5 inline-flex">
@@ -366,54 +407,148 @@
             <div class="flex w-full space-between gap-6">
 
                 <div
-                        class="flex flex-col basis-4/12 bg-[#FFCC00] gap-6 p-6 rounded-2xl">
-                    <div class="flex flex-col items-center gap-2">
+                        class="flex flex-col min-h-[360px] basis-4/12 bg-[#FFCC00] rounded-2xl overflow-hidden">
+                    <div class="flex p-4 gap-2">
+
 
                         <img src="/web%20dev%20assets/Apa%20Kata%20Mereka/Ellipse%204.png"
-                             alt="Jembatan Kesenjangan Edukasi">
-                        <h3 class="text-center text-black text-2xl font-semibold font-['Poppins']">
-                            Kimberly Nguyen</h3>
-                        <h4 class="text-center text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
-                            Mahasiswi</h4>
+                             alt="Jembatan Kesenjangan Edukasi"
+                             class="w-[92px] h-[92px]"
+                        >
+                        <div
+                                class="flex flex-col w-full items-center gap-2">
+
+                            <h3
+                                    class="w-full text-white text-2xl font-semibold font-['Poppins']">
+                                Kimberly Nguyen</h3>
+                            <h4
+                                    class="w-full text-white text-base font-normal font-['Poppins'] leading-normal tracking-wide">
+                                Mahasiswi</h4>
+                            <div class="flex w-full gap-4">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-center text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">Materi Luarsekolah sangat mudah dipahami. Trainernya
-                        juga
-                        bagus dalam menyampaikan pelatihan. Apabila ada kendala,
-                        admin sangat fast respon dalam menangani kendalanya</p>
+                    <div class=" h-full p-4 bg-[#FAEFB7]">
+
+                        <p class="text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
+                            Materi Luarsekolah sangat mudah dipahami. Trainernya
+                            juga
+                            bagus dalam menyampaikan pelatihan. Apabila ada
+                            kendala,
+                            admin sangat fast respon dalam menangani
+                            kendalanya</p>
+                    </div>
                 </div>
 
                 <div
-                        class="flex flex-col basis-4/12 bg-[#FFCC00] gap-6 p-6 rounded-2xl">
-                    <div class="flex flex-col items-center gap-2">
+                        class="flex flex-col min-h-[360px] basis-4/12 bg-[#FFCC00] rounded-2xl overflow-hidden">
+                    <div class="flex p-4 gap-2">
+
 
                         <img src="/web%20dev%20assets/Apa%20Kata%20Mereka/Ellipse%205.png"
-                             alt="Jembatan Kesenjangan Edukasi">
-                        <h3 class="text-center text-black text-2xl font-semibold font-['Poppins']">
-                            Rizal</h3>
-                        <h4 class="text-center text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
-                            Mahasiswi</h4>
+                             alt="Jembatan Kesenjangan Edukasi"
+                             class="w-[92px] h-[92px]"
+                        >
+                        <div
+                                class="flex flex-col w-full items-center gap-2">
+
+                            <h3
+                                    class="w-full text-white text-2xl font-semibold font-['Poppins']">
+                                Mahasiswa</h3>
+                            <h4
+                                    class="w-full text-white text-base font-normal font-['Poppins'] leading-normal tracking-wide">
+                                Mahasiswa</h4>
+                            <div class="flex w-full gap-4">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-center text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">Sangat membantu dalam meningkatkan skill dan keterampilan
-                        saya, khususnya di bidang digital marketing yang saya
-                        tekuni. Saya merasa lebih percaya diri saat mencari
-                        kerja</p>
+                    <div class=" h-full p-4 bg-[#FAEFB7]">
+
+                        <p class="text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
+                            saya, khususnya di bidang digital marketing yang
+                            saya
+                            tekuni. Saya merasa lebih percaya diri saat mencari
+                            kerja</p>
+                    </div>
                 </div>
+
                 <div
-                        class="flex flex-col basis-4/12 bg-[#FFCC00] gap-6 p-6 rounded-2xl">
-                    <div class="flex flex-col items-center gap-2">
+                        class="flex flex-col min-h-[360px] basis-4/12 bg-[#FFCC00] rounded-2xl overflow-hidden">
+                    <div class="flex p-4 gap-2">
+
 
                         <img src="/web%20dev%20assets/Apa%20Kata%20Mereka/Ellipse%205-1.png"
-                             alt="Jembatan Kesenjangan Edukasi">
-                        <h3 class="text-center text-black text-2xl font-semibold font-['Poppins']">
-                            Suryaningtyas</h3>
-                        <h4 class="text-center text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
-                            Ibu Rumah Tangga</h4>
+                             alt="Jembatan Kesenjangan Edukasi"
+                             class="w-[92px] h-[92px]"
+                        >
+                        <div
+                                class="flex flex-col w-full items-center gap-2">
+
+                            <h3
+                                    class="w-full text-white text-2xl font-semibold font-['Poppins']">
+                                Suryaningtyas</h3>
+                            <h4
+                                    class="w-full text-white text-base font-normal font-['Poppins'] leading-normal tracking-wide">
+                                Ibu Rumah Tangga</h4>
+                            <div class="flex w-full gap-4">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                                <img
+                                        src="/web%20dev%20assets/Apa%20Kata%20Mereka/star.svg"
+                                        alt="">
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-center text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">Materi yang disampaikan sangat mudah dipahami, bahkan
-                        bagi saya yang tidak terlalu paham teknologi. Selain
-                        itu, para pengajarnya sangat sabar dan memberikan
-                        contoh-contoh yang praktis.</p>
+                    <div class=" h-full p-4 bg-[#FAEFB7]">
+
+                        <p class="text-black text-base font-normal font-['Poppins'] leading-normal tracking-wide">
+                            bagi saya yang tidak terlalu paham teknologi. Selain
+                            itu, para pengajarnya sangat sabar dan memberikan
+                            contoh-contoh yang praktis.</p>
+                    </div>
                 </div>
+
+
             </div>
 
         </div>
@@ -423,22 +558,28 @@
         <div
                 class="xl:container flex flex-col mx-auto ">
             <div class="w-full flex flex-col gap-6">
-                <h2  class="text-black text-[32px] font-normal font-['Roboto'] leading-10">Partner Kami</h2>
+                <h2 class="text-black text-[32px] font-normal font-['Roboto'] leading-10">
+                    Partner Kami</h2>
                 <div class="flex flex-col gap-2">
 
-                <p>
-                    Luarsekolah menjalin kemitraan dengan berbagai institusi dan
-                    perusahaan terkemuka untuk memastikan program yang
-                    ditawarkan, termasuk pelatihan digital marketing, sesuai
-                    dengan kebutuhan industri dan relevan dengan perkembangan
-                    pasar kerja saat ini. Dengan dukungan dari program Prakerja,
-                    Belajar Bekerja, dan Indonesia Skill Week, Luarsekolah terus
-                    menghadirkan solusi pelatihan yang tepat sasaran untuk
-                    membantu peserta meningkatkan keterampilan dan daya saing di
-                    dunia kerja.
-                </p>
-                <img src="/web%20dev%20assets/Partner%20Kami/image%202.png"
-                     alt="">
+                    <p>
+                        Luarsekolah menjalin kemitraan dengan berbagai institusi
+                        dan
+                        perusahaan terkemuka untuk memastikan program yang
+                        ditawarkan, termasuk pelatihan digital marketing, sesuai
+                        dengan kebutuhan industri dan relevan dengan
+                        perkembangan
+                        pasar kerja saat ini. Dengan dukungan dari program
+                        Prakerja,
+                        Belajar Bekerja, dan Indonesia Skill Week, Luarsekolah
+                        terus
+                        menghadirkan solusi pelatihan yang tepat sasaran untuk
+                        membantu peserta meningkatkan keterampilan dan daya
+                        saing di
+                        dunia kerja.
+                    </p>
+                    <img src="/web%20dev%20assets/Partner%20Kami/image%202.png"
+                         alt="">
                 </div>
             </div>
 
@@ -446,25 +587,36 @@
     </section>
 
     <section id="cta"
-             class="bg-[#00cc99]  h-[411px] grid place-content-center w-full">
-        <div class="xl:container mx-auto flex flex-col items-center gap-12">
+             class="bg-[#00cc99]  h-[411px] grid place-content-center w-full overflow-hidden relative">
+        <img
+                src="public/web%20dev%20assets/Waktunya%20Mengubah%20Masa%20Depanmu!/Background.png"
+                class="w-full absolute"
+                alt="">
+        <div
+                class="xl:container mx-auto flex flex-col items-center gap-12 z-10">
             <div class="flex flex-col gap-6">
 
-            <h2 class="text-center text-white text-[40px] font-normal font-['Roboto'] leading-10">
-                Waktunya Mengubah Masa Depanmu!
-            </h2>
-            <p class="text-center text-white text-base font-normal font-['Roboto'] leading-normal tracking-wide">
-                Jangan lewatkan kesempatan untuk menjadi bagian dari komunitas
-                Luarsekolah! Lebih dari 250.000 anggota telah meraih
-                keterampilan baru melalui program Prakerja, termasuk dalam
-                pelatihan digital marketing, dan memulai perjalanan karir yang
-                lebih baik. Dengan dukungan dari Belajar Bekerja dan Indonesia
-                Skill Week, kini saatnya Kamu menjadi bagian dari cerita sukses
-                mereka!
-            </p>
+                <h2 class="text-center text-white text-[40px] font-normal font-['Roboto'] leading-10">
+                    Waktunya Mengubah Masa Depanmu!
+                </h2>
+                <p class="text-center text-white text-base font-normal font-['Roboto'] leading-normal tracking-wide">
+                    Jangan lewatkan kesempatan untuk menjadi bagian dari
+                    komunitas
+                    Luarsekolah! Lebih dari 250.000 anggota telah meraih
+                    keterampilan baru melalui program Prakerja, termasuk dalam
+                    pelatihan digital marketing, dan memulai perjalanan karir
+                    yang
+                    lebih baik. Dengan dukungan dari Belajar Bekerja dan
+                    Indonesia
+                    Skill Week, kini saatnya Kamu menjadi bagian dari cerita
+                    sukses
+                    mereka!
+                </p>
             </div>
-            <button class="bg-[#FFCC00] flex p-4 w-fit rounded-lg text-black text-base font-semibold font-['Poppins'] leading-normal tracking-wide">Temukan
-                Kelasmu</button>
+            <button class="bg-[#FFCC00] flex p-4 w-fit rounded-lg text-black text-base font-semibold font-['Poppins'] leading-normal tracking-wide">
+                Temukan
+                Kelasmu
+            </button>
         </div>
 
     </section>
